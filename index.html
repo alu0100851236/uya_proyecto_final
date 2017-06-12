@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!-- Title -->
+        <title>Collaborate Classroom</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta charset="UTF-8">
+        <meta name="description" content="Pagina de inicio de la aplicación Collaborate Classroom " />
+        <meta name="keywords" content="ULL,classroom" />
+        <meta name="author" content="Carlos Fernandez Donate / David Dorta Acosta" />
+
+        <!-- Styles -->
+        <link type="text/css" rel="stylesheet" href="assets/plugins/materialize/css/materialize.min.css"/>
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="assets/css/materialize.css" media="screen,projection" rel="stylesheet" type="text/css">
+        <link href="assets/plugins/metrojs/MetroJs.min.css" rel="stylesheet">
+        <link href="assets/plugins/weather-icons-master/css/weather-icons.min.css" rel="stylesheet">
+
+
+        <!-- Theme Styles -->
+        <link href="assets/css/alpha.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/custom.css" rel="stylesheet" type="text/css"/>
+
+
+
+    </head>
+    <body>
+        <div class="loader">
+            <div class="preloader-wrapper big active">
+                <div class="spinner-layer spinner-blue">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div><div class="gap-patch">
+                    <div class="circle"></div>
+                    </div><div class="circle-clipper right">
+                    <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="spinner-layer spinner-teal lighten-1">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div><div class="gap-patch">
+                    <div class="circle"></div>
+                    </div><div class="circle-clipper right">
+                    <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="spinner-layer spinner-yellow">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div><div class="gap-patch">
+                    <div class="circle"></div>
+                    </div><div class="circle-clipper right">
+                    <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="spinner-layer spinner-green">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div><div class="gap-patch">
+                    <div class="circle"></div>
+                    </div><div class="circle-clipper right">
+                    <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mn-content fixed-sidebar">
+            <header class="mn-header navbar-fixed">
+                <nav class="teal lighten-1">
+                    <div class="nav-wrapper row">
+                        <section class="material-design-hamburger navigation-toggle">
+                            <a href="javascript:void(0)" data-activates="slide-out" class="button-collapse show-on-large material-design-hamburger__icon">
+                                <span class="material-design-hamburger__layer"></span>
+                            </a>
+                        </section>
+                        <div class="header-title col s3 m3">
+                            <span class="chapter-title">Collaborate Classroom</span>
+                        </div>
+                        <form class="left search col s6 hide-on-small-and-down">
+                            <div class="input-field">
+                                <input id="search" type="search" placeholder="Buscar" autocomplete="off">
+                                <label for="search"><i class="material-icons search-icon">search</i></label>
+                        </div>
+                        <a href="javascript: void(0)" class="close-search"><i class="material-icons">close</i></a>
+                    </form>
+                    <ul class="right col s9 m3 nav-right-menu">
+                        <li><a href="javascript:void(0)" data-activates="chat-sidebar" class="chat-button show-on-large"><i class="material-icons">more_vert</i></a></li>
+                            <li class="hide-on-small-and-down"><a href="javascript:void(0)" data-activates="dropdown1" class="dropdown-button dropdown-right show-on-large"><i class="material-icons">notifications_none</i><span class="badge">4</span></a></li>
+                            <li class="hide-on-med-and-up"><a href="javascript:void(0)" class="search-toggle"><i class="material-icons">search</i></a></li>
+                        </ul>
+
+                        <ul id="dropdown1" class="dropdown-content notifications-dropdown">
+                            <li class="notificatoins-dropdown-container">
+                                <ul>
+                                    <li class="notification-drop-title">Today</li>
+                                    <li>
+                                        <a href="index.html#!">
+                                        <div class="notification">
+                                            <div class="notification-icon circle cyan"><i class="material-icons">done</i></div>
+                                            <div class="notification-text"><p><b>Practica entregada</b></p><span>hace 7 min</span></div>
+                                        </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#!">
+                                        <div class="notification">
+                                            <div class="notification-icon circle deep-purple"><i class="material-icons">cached</i></div>
+                                            <div class="notification-text"><p><b>Actualizando Tutorias</b> </p><span>hace 14 min</span></div>
+                                        </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#!">
+                                        <div class="notification">
+                                            <div class="notification-icon circle red"><i class="material-icons">delete</i></div>
+                                            <div class="notification-text"><p><b>Borrada Tutoria</b> AEDA</p><span>hace 28 min</span></div>
+                                        </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#!">
+                                        <div class="notification">
+                                            <div class="notification-icon circle green"><i class="material-icons">file_upload</i></div>
+                                            <div class="notification-text"><p>Ficheros subidos correctamente</p><span>hace 4 h</span></div>
+                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="notification-drop-title">Yestarday</li>
+                                    <li>
+                                        <a href="index.html#!">
+                                        <div class="notification">
+                                            <div class="notification-icon circle green"><i class="material-icons">security</i></div>
+                                            <div class="notification-text"><p>Actualización de seguridad</p><span>hace 16 h</span></div>
+                                        </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#!">
+                                        <div class="notification">
+                                            <div class="notification-icon circle cyan"><i class="material-icons">code</i></div>
+                                            <div class="notification-text"><p>Codigo compartido</p><span>hace 1 dia</span></div>
+                                        </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <div class="search-results">
+                <div class="container search-container">
+                    <div class="row">
+                        <div class="col s12 search-head">
+                            <div class="row">
+                                <div class="col s12">
+                                    <div class="left">
+                                        <p class="search-results-title">Quick search results</p>
+                                        <p class="search-filter left">
+                                            <input type="checkbox" class="filled-in" id="filled-in-box" checked/>
+                                            <label for="filled-in-box">Google search</label>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="res-not-found">No results found</div>
+                        </div>
+
+                        </div>
+                        <div class="col s12 m4 search-result-container">
+                        </div>
+                    </div>
+                </div>
+
+            <aside id="chat-sidebar" class="side-nav white">
+                <div class="side-nav-wrapper">
+                    <div class="col s12">
+                        <ul class="tabs tab-demo" style="width: 100%;">
+                            <li class="tab col s3"><a href="index.html#sidebar-chat-tab" class="active">chat</a></li>
+                            <li class="tab col s3"><a href="index.html#sidebar-more-tab">Configuración</a></li>
+                        </ul>
+                    </div>
+                    <div id="sidebar-chat-tab" class="col s12 sidebar-messages right-sidebar-panel">
+                        <p class="right-sidebar-heading">LISTA DE CHATS</p>
+                        <div class="chat-list">
+                            <a href="javascript:void(0)" class="chat-message">
+                                <div class="chat-item">
+                                    <div class="chat-item-image">
+                                        <img src="assets/images/d1.jpg" class="circle" alt="">
+                                    </div>
+                                    <div class="chat-item-info">
+                                        <p class="chat-name">David Dorta</p>
+                                        <span class="chat-message">HOLA</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="chat-message">
+                                <div class="chat-item">
+                                    <div class="chat-item-image">
+                                        <img src="assets/images/usu_random.png" class="circle" alt="">
+                                    </div>
+                                    <div class="chat-item-info">
+                                        <p class="chat-name">Sara Donate</p>
+                                        <span class="chat-message">Pasame los apuntes</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="chat-message">
+                                <div class="chat-item">
+                                    <div class="chat-item-image">
+                                        <img src="assets/images/f1.png" class="circle" alt="">
+                                    </div>
+                                    <div class="chat-item-info">
+                                        <p class="chat-name">Tu</p>
+                                        <span class="chat-message">Devolver libro</span></div>
+                                </div>
+                            </a>
+
+                            <a href="javascript:void(0)" class="chat-message">
+                                <div class="chat-item">
+                                    <div class="chat-item-image">
+                                        <img src="assets/images/profile-image-1.png" class="circle" alt="">
+                                    </div>
+                                    <div class="chat-item-info">
+                                        <p class="chat-name">Sandra</p>
+                                        <span class="chat-message">Nos vemos luego?</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="chat-sidebar-options">
+                            <a href="index.html#" class="left"><i class="material-icons">edit</i></a>
+                            <a href="index.html#" class="right"><i class="material-icons">sttings</i></a>
+                        </div>
+                    </div>
+                    <div id="sidebar-more-tab" class="col s12 sidebar-more right-sidebar-panel">
+                        <p class="right-sidebar-heading">SISTEMA</p>
+                        <div class="settings-list">
+                            <div class="setting-item">
+                                <div class="setting-text">Notificaciones</div>
+                                <div class="setting-set">
+                                    <div class="switch">
+                                        <label>
+                                            <input type="checkbox" checked>
+                                            <span class="lever"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="setting-item">
+                                <div class="setting-text">Busqueda Rapida</div>
+                                <div class="setting-set">
+                                    <div class="switch">
+                                        <label>
+                                            <input type="checkbox" checked>
+                                            <span class="lever"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="setting-item">
+                                <div class="setting-text">Autocompletado</div>
+                                <div class="setting-set">
+                                    <div class="switch">
+                                        <label>
+                                            <input type="checkbox">
+                                            <span class="lever"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="right-sidebar-heading">CUENTA</p>
+                        <div class="settings-list">
+                            <div class="setting-item">
+                                <div class="setting-text">Modo Offline</div>
+                                <div class="setting-set">
+                                    <div class="switch">
+                                        <label>
+                                            <input type="checkbox">
+                                            <span class="lever"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="setting-item">
+                                <div class="setting-text">Localización</div>
+                                <div class="setting-set">
+                                    <div class="switch">
+                                        <label>
+                                            <input type="checkbox">
+                                            <span class="lever"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="setting-item">
+                                <div class="setting-text">Perfil Público</div>
+                                <div class="setting-set">
+                                    <div class="switch">
+                                        <label>
+                                            <input type="checkbox">
+                                            <span class="lever"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="setting-item">
+                                <div class="setting-text">Guardar Historial</div>
+                                <div class="setting-set">
+                                    <div class="switch">
+                                        <label>
+                                            <input type="checkbox">
+                                            <span class="lever"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <aside id="chat-messages" class="side-nav white">
+                <p class="sidebar-chat-name">Tom Simpson<a href="index.html#" data-activates="chat-messages" class="chat-message-link"><i class="material-icons">keyboard_arrow_right</i></a></p>
+                <div class="messages-container">
+                    <div class="message-wrapper them">
+                        <div class="circle-wrapper"><img src="assets/images/profile-image-1.png" class="circle" alt=""></div>
+                        <div class="text-wrapper">Lorem Ipsum</div>
+                    </div>
+                    <div class="message-wrapper me">
+                        <div class="circle-wrapper"><img src="assets/images/profile-image-3.jpg" class="circle" alt=""></div>
+                        <div class="text-wrapper">Integer in faucibus diam?</div>
+                    </div>
+                    <div class="message-wrapper them">
+                        <div class="circle-wrapper"><img src="assets/images/profile-image-1.png" class="circle" alt=""></div>
+                        <div class="text-wrapper">Vivamus quis neque volutpat, hendrerit justo vitae, suscipit dui</div>
+                    </div>
+                    <div class="message-wrapper me">
+                        <div class="circle-wrapper"><img src="assets/images/profile-image-3.jpg" class="circle" alt=""></div>
+                        <div class="text-wrapper">Suspendisse condimentum tortor et lorem pretium</div>
+                    </div>
+                    <div class="message-wrapper them">
+                        <div class="circle-wrapper"><img src="assets/images/profile-image-1.png" class="circle" alt=""></div>
+                        <div class="text-wrapper">dolore eu fugiat nulla pariatur</div>
+                    </div>
+                    <div class="message-wrapper me">
+                        <div class="circle-wrapper"><img src="assets/images/profile-image-3.jpg" class="circle" alt=""></div>
+                        <div class="text-wrapper">Duis maximus leo eget massa porta</div>
+                    </div>
+                </div>
+                <div class="message-compose-box">
+                    <div class="input-field">
+                        <input placeholder="Write message" id="message_compose" type="text">
+                    </div>
+                </div>
+            </aside>
+            <aside id="slide-out" class="side-nav white fixed">
+                <div class="side-nav-wrapper">
+
+                          <!-- logo de COLLABORATE CLASSROOM -->
+                          <img class="responsive-img" src="assets/images/CC_logo_01.png" alt="" >
+
+
+
+
+
+                    <!--  Codigo necesario para los desplegables -->
+                    <div class="sidebar-account-settings">
+                        <ul>
+                            <li class="no-padding">
+                                <a class="waves-effect waves-grey"><i class="material-icons">mail_outline</i>Inbox</a>
+                            </li>
+                            <li class="no-padding">
+                                <a class="waves-effect waves-grey"><i class="material-icons">star_border</i>Starred<span class="new badge">18</span></a>
+                            </li>
+                            <li class="no-padding">
+                                <a class="waves-effect waves-grey"><i class="material-icons">done</i>Sent Mail</a>
+                            </li>
+                            <li class="no-padding">
+                                <a class="waves-effect waves-grey"><i class="material-icons">history</i>History<span class="new grey lighten-1 badge">3 new</span></a>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="no-padding">
+                                <a class="waves-effect waves-grey"><i class="material-icons">exit_to_app</i>Sign Out</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+
+
+                    <!-- Menu lateral izquierdo -->
+                    <ul class="sidebar-menu collapsible collapsible-accordion" data-collapsible="accordion">
+                    <li class="no-padding active"><a class="waves-effect waves-grey active" href="index.html"><i class="material-icons">web</i>INICIO</a></li>
+                    <li class="no-padding">
+
+
+                    <li class="no-padding active"><a class="waves-effect waves-grey active" href="index.html"><i class="material-icons">perm_identity</i>CAMPUS VIRTUAL</a></li>
+                    <li class="no-padding">
+
+                    <li class="no-padding active"><a class="waves-effect waves-grey active" href="index.html"><i class="material-icons">assignment_ind</i>QUIENES SOMOS</a></li>
+                    <li class="no-padding">
+
+                        <a class="collapsible-header waves-effect waves-grey"><i class="material-icons">view_list</i>SERVICIOS<i class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#">Portal</a></li>
+                                <li><a href="#">Correo</a></li>
+                                <li><a href="#">Disco duro</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="no-padding">
+                        <a class="collapsible-header waves-effect waves-grey"><i class="material-icons">done_all</i>ASIGNATURAS<i class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#">Administración</a></li>
+                                <li><a href="#">AEDA</a></li>
+                                <li><a href="#">AED</a></li>
+                                <li><a href="#">SSO</a></li>
+                                <li><a href="#">OPT</a></li>
+                                <li><a href="#">SED</a></li>
+                                <li><a href="#">UYA</a></li>
+                                <li><a href="#">Calculo</a></li>
+                                <li><a href="#">Ingles</a></li>
+                                <li><a href="#">DSI</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="no-padding">
+                        <a class="collapsible-header waves-effect waves-grey"><i class="material-icons">dns</i>CURSOS<i class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#">PRIMERO</a></li>
+                                <li><a href="#">SEGUNDO</a></li>
+                                <li><a href="#">TERCERO</a></li>
+                                <li><a href="#">CUARTO</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+                <div class="footer">
+                    <p class="copyright"> © 2017 <br>Carlos Fernandez<br> David Dorta</p>
+                    <a href="index.html#!">Privacy</a> &amp; <a href="index.html#!">Terms</a>
+                </div>
+                </div>
+            </aside>
+            <main class="mn-inner inner-active-sidebar">
+                <!--Contenedor del cuerpo de la pagina-->
+                <div class="middle-content">
+
+                    <div class="row no-m-t no-m-b">
+                        <div class="col s12 m12 l12">
+                            <div class="card invoices-card">
+
+                    <div class="card-content">
+
+                                    <span class="card-title">Texto 1:</span>
+                                    				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean finibus est non nulla lobortis, ut maximus ante finibus. Vestibulum dictum bibendum rutrum. Aliquam lacinia justo quis rutrum sollicitudin. Morbi aliquam porta felis, in condimentum massa elementum in. In hac habitasse platea dictumst. In rutrum mauris metus, vel condimentum sapien malesuada ut. Proin iaculis porta purus eget viverra. Nunc cursus et nibh eu hendrerit. Mauris diam orci, posuere porta ante nec, tincidunt lacinia elit. Fusce tempor justo neque, vel consectetur diam feugiat ac. Curabitur tincidunt vitae metus in convallis. Sed congue, libero sit amet consequat pellentesque, magna nisl sodales quam, vitae congue elit nisi sed justo. Donec ultrices dui ac sem ornare, sit amet interdum dolor congue. Quisque scelerisque dui cursus hendrerit sagittis. Praesent urna purus, porttitor ut dui sit amet, auctor suscipit felis. Pellentesque velit lectus, tempor ac quam et, scelerisque bibendum risus.</p>
+
+                    </div>
+
+                    </div>
+                    </div>
+                    </div>
+
+
+                                        <div class="row no-m-t no-m-b">
+                        <div class="col s12 m12 l12">
+                            <div class="card invoices-card">
+
+                    <div class="card-content">
+                                    <span class="card-title">Texto 2:</span>
+				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque lacinia, quam eu cursus fermentum, sapien nibh maximus magna, et cursus ipsum velit a ligula. Nam sit amet accumsan tortor. Fusce sed vehicula lacus. Vivamus et massa non magna laoreet laoreet. Duis tempus magna sed eleifend scelerisque. Sed finibus non mi sed sollicitudin. Aliquam iaculis luctus turpis eget pellentesque. Aliquam erat volutpat. Vestibulum rhoncus quis odio ac elementum.</p>
+
+                    </div>
+
+                                        </div>
+                    </div>
+                    </div>
+
+
+
+
+                                                                                <div class="row no-m-t no-m-b">
+                        <div class="col s12 m12 l12">
+                            <div class="card invoices-card">
+
+
+                <div class="card-content">
+                                    <span class="card-title">Texto 3:</span>
+				<p>Nam et mattis diam, ut luctus mi. Fusce at suscipit massa. Fusce rutrum dolor aliquam mauris dignissim rutrum. Sed interdum mi et neque blandit commodo. Nunc consectetur id sapien eget semper. Sed ut dui nunc. In facilisis non magna in pulvinar. Nam maximus est sem, et aliquet tortor pulvinar semper. In sodales placerat ligula, volutpat blandit velit suscipit quis. Pellentesque est massa, semper nec urna et, vestibulum porta leo. Aenean condimentum et neque ac porttitor. Nullam vehicula placerat risus, vel iaculis urna. Maecenas ornare ultricies leo, mattis gravida ante vulputate vitae. Maecenas rutrum tellus id sem dignissim, sed lobortis lacus elementum. Phasellus at cursus orci, id iaculis nisi.</p>
+
+                    </div>
+
+                                                            </div>
+                    </div>
+                    </div>
+
+
+
+                                                            <div class="row no-m-t no-m-b">
+                        <div class="col s12 m12 l12">
+                            <div class="card invoices-card">
+
+                <div class="card-content">
+                                    <span class="card-title">Texto 4:</span>
+				<p>Mauris ultrices ultricies nibh, vel blandit eros venenatis quis. Aliquam erat volutpat. Phasellus vehicula ex eu velit cursus, at varius ligula pulvinar. Ut consectetur ipsum lacus, nec porta tellus ullamcorper eu. Sed maximus diam non fringilla pretium. Nullam dapibus fermentum massa eget consequat. Etiam consequat sit amet nibh vitae rutrum. Aliquam posuere eget urna at scelerisque. Curabitur tempus sodales varius. Proin neque felis, sodales in iaculis ut, egestas in ligula. Integer finibus massa eget arcu congue blandit. Aenean ac dolor bibendum, tristique tortor ac, tristique quam. Curabitur eget maximus ex, at interdum mi. Quisque enim enim, fermentum ut varius in, faucibus commodo ligula. Donec sed vestibulum nisl, ut commodo ante. Etiam eleifend ante vitae elit dictum fringilla.</p>
+
+                    </div>
+                                        </div>
+                    </div>
+                    </div>
+
+
+                                                                                <div class="row no-m-t no-m-b">
+                        <div class="col s12 m12 l12">
+                            <div class="card invoices-card">
+
+
+                <div class="card-content">
+                                    <span class="card-title">Texto 5:</span>
+				<p>Pellentesque sapien nisl, viverra eu dignissim vitae, gravida finibus ligula. Nam non augue ac turpis ullamcorper suscipit quis ut lorem. Ut a mi a magna interdum molestie. Aenean bibendum velit ipsum, in molestie purus consequat volutpat. Pellentesque mollis dignissim leo. Phasellus risus turpis, sollicitudin ut lobortis in, condimentum et magna. Sed sit amet neque volutpat lectus vehicula semper. Sed gravida malesuada ipsum sed vehicula. Phasellus bibendum odio non neque viverra semper. Ut eleifend consequat eros, nec blandit ipsum euismod nec.</p>
+        <!--FIN This div is 8-columns wide-->
+
+                    </div>
+                                                            </div>
+                    </div>
+                    </div>
+
+
+
+
+                </div>
+
+                <!--Contenedor lateral derecho-->
+                <div class="inner-sidebar">
+                    <span class="inner-sidebar-title">Notificar problemas <i class="material-icons">report_problem</i></span>
+                </div>
+            </main>
+
+            <!--Contenedor del footer-->
+
+        </div>
+        <div class="left-sidebar-hover"></div>
+
+
+        <!-- Javascripts -->
+        <script src="assets/plugins/jquery/jquery-2.2.0.min.js"></script>
+        <script src="assets/plugins/materialize/js/materialize.min.js"></script>
+        <script src="assets/plugins/material-preloader/js/materialPreloader.min.js"></script>
+        <script src="assets/plugins/jquery-blockui/jquery.blockui.js"></script>
+        <script src="assets/plugins/waypoints/jquery.waypoints.min.js"></script>
+        <script src="assets/plugins/counter-up-master/jquery.counterup.min.js"></script>
+        <script src="assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
+        <script src="assets/plugins/chart.js/chart.min.js"></script>
+        <script src="assets/plugins/flot/jquery.flot.min.js"></script>
+        <script src="assets/plugins/flot/jquery.flot.time.min.js"></script>
+        <script src="assets/plugins/flot/jquery.flot.symbol.min.js"></script>
+        <script src="assets/plugins/flot/jquery.flot.resize.min.js"></script>
+        <script src="assets/plugins/flot/jquery.flot.tooltip.min.js"></script>
+        <script src="assets/plugins/curvedlines/curvedLines.js"></script>
+        <script src="assets/plugins/peity/jquery.peity.min.js"></script>
+        <script src="assets/js/alpha.min.js"></script>
+        <script src="assets/js/pages/dashboard.js"></script>
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-98812363-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    </body>
+</html>
