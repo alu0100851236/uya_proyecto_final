@@ -299,25 +299,41 @@
                            </div>
                          </div>
                        </div>
-                    <div class="row"  >
 
+                    <div class="row">
 
-                      <div class="col s4">            <div class="card-panel teal lighten-2">
-              <span class="card-title">Card Title</span>
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-            </div></div>
-                      <div class="col s4">            <div class="card-panel teal lighten-2">
-              <span class="card-title">Card Title</span>
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-            </div></div>
-                      <div class="col s4">            <div class="card-panel teal lighten-2">
-              <span class="card-title">Card Title</span>
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-            </div></div>
+                      <!-- Columna Archivos -->
+                      <div class="col s4">
+                        <div class="card-panel teal lighten-2">
+                          <span class="card-title">Card Title</span>
+                          <p>I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                      </div>
+
+                      <!-- Columna Chats -->
+                      <div class="col s4">
+                        <div class="card-panel teal lighten-2">
+                          <h5>Foro</h5>
+                          <div class="col-sm-6">
+                              <br>
+                              <input type='text' class="form-control" id='nombreInput' placeholder='Nombre'>
+                              <input type='text' class="form-control" id='mensajeInput' placeholder='Mensaje'>
+                              <div id='mensaje'></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Columna Profesor -->
+                      <div class="col s4">
+                        <div class="card-panel teal lighten-2">
+                          <span class="card-title">Card Title</span>
+                          <p>I am a very simple card. I am good at containing small bits of information.
+                          I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                      </div>
                     </div>
+                  </div>
                 <!--Contenedor lateral derecho-->
 
                 <!--
@@ -335,6 +351,8 @@
 
         <!-- Javascripts -->
         <script src="assets/plugins/jquery/jquery-2.2.0.min.js"></script>
+        <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
+        <script src="assets/js/chat_uya.js"></script>
         <script src="assets/plugins/materialize/js/materialize.min.js"></script>
         <script src="assets/plugins/material-preloader/js/materialPreloader.min.js"></script>
         <script src="assets/plugins/jquery-blockui/jquery.blockui.js"></script>
