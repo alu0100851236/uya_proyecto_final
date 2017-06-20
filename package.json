@@ -1,0 +1,39 @@
+{
+  "name": "gitbook-nodejs",
+  "version": "0.0.1",
+  "description": "GitBook Boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "generate-gitbook": "./scripts/losh generate-gitbook",
+    "generate-wiki": "./scripts/losh generate-wiki",
+    "build": "npm install && npm i gitbook-cli && npm run generate-gitbook && npm run generate-wiki",
+    "deploy-gitbook": "./scripts/losh deploy-gitbook",
+    "deploy-wiki": "./scripts/losh deploy-wiki",
+    "deploy": "npm run build && npm run deploy-gitbook && npm run deploy-wiki",
+    "version": "./scripts/losh version",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ULL-ESIT-DSI-1617/primeros-pasos-en-nodejs-carlos-david-35l2-2.git",
+    "wiki": "https://github.com/ULL-ESIT-DSI-1617/primeros-pasos-en-nodejs-carlos-david-35l2-2.wiki.git"
+  },
+  "keywords": [
+    "gitbook",
+    "boilerplate",
+    "starter"
+  ],
+  "author": " Carlos Fernández , David Dorta",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/ULL-ESIT-DSI-1617/primeros-pasos-en-nodejs-carlos-david-35l2-2/issues"
+  },
+  "homepage": "https://github.com/ULL-ESIT-DSI-1617/primeros-pasos-en-nodejs-carlos-david-35l2-2#readme",
+  "devDependencies": {
+    "async": "^1.4.0",
+    "fs-extra": "^0.22.1",
+    "gh-pages": "^0.3.1"
+  },
+  "dependencies": {
+  }
+}

@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 
 app.use(express.static('public'));
+app.set('port', (process.env.PORT || 8081));
 app.get('/index.html', function (req, res) {
    res.sendFile( __dirname + "/" + "index.html" );
 })
@@ -20,7 +21,7 @@ app.get('/redes_de_computadores.html', function (req, res) {
 app.get('/uya.html', function (req, res) {
    res.sendFile( __dirname + "/" + "uya.html" );
 })
-var server = app.listen(8081, function () {
+var server = app.listen(app.get('port'), function () {
    var host = server.address().address
    var port = server.address().port
    console.log("Example app listening at http://%s:%s", host, port)
