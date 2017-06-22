@@ -15,8 +15,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ULL-ESIT-DSI-1617/primeros-pasos-en-nodejs-carlos-david-35l2-2.git",
-    "wiki": "https://github.com/ULL-ESIT-DSI-1617/primeros-pasos-en-nodejs-carlos-david-35l2-2.wiki.git"
+    "url": "https://github.com/alu0100851236/uya_proyecto_final.git",
+    "wiki": "https://github.com/alu0100851236/uya_proyecto_final.wiki.git"
   },
   "keywords": [
     "gitbook",
@@ -26,13 +26,13 @@
   "author": " Carlos Fernández , David Dorta",
   "license": "GPL",
   "bugs": {
-    "url": "https://github.com/ULL-ESIT-DSI-1617/primeros-pasos-en-nodejs-carlos-david-35l2-2/issues"
+    "url": "https://github.com/alu0100851236/uya_proyecto_final/issues"
   },
-  "homepage": "https://github.com/ULL-ESIT-DSI-1617/primeros-pasos-en-nodejs-carlos-david-35l2-2#readme",
-  "devDependencies": {
-
-  },
+  "homepage": "https://github.com/alu0100851236/uya_proyecto_final#readme",
+  "devDependencies": {},
   "dependencies": {
-    "express": "^4.15.3"
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "sqlite3": "^3.1.8"
   }
 }
