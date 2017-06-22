@@ -60,7 +60,7 @@
           <br>
           <div class="caption center-align">
             <div class="row">
-              <form action="login" method="post">
+              <form action="login" method="post" onsubmit="return validacion()">
                 <div class="row">
                   <div class="row">
                         <div class="input-field col s8">
@@ -79,6 +79,7 @@
                   <button type="submit" class="button buttonBlue">Registrarse
                     <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
                   </button>
+                  <p>Usuario no encontrado </p>
                 </div>
               </form>
             </div>
