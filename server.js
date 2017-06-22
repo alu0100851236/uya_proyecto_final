@@ -41,8 +41,8 @@ app.get('/', function (req, res) {
    res.sendFile( __dirname + '/public/login.html');
 });
 
-// app.get('/index.html', function (req, res) {
-//    res.sendFile( __dirname + "/" + "index.html" );
+// app.get('/index1.html', function (req, res) {
+//    res.sendFile( __dirname + "/" + "index1.html" );
 // })
 
 // app.get('/base_de_datos.html', function (req, res) {
@@ -65,11 +65,14 @@ app.post('/login', function(req, res) {
       if(err)
           throw err;
       else
-          if(row)
-            res.sendFile( __dirname + "/index1.html" );
-          else
-            console.log("Usuario no encontrado")
-            res.render('login_error.jade', {title: "login_error"})
+          if(row){
+            console.log("Usuario encontrado")
+            res.sendFile( __dirname + '/public/index1.html')
+          }
+          else {
+            console.log("Usuario no encontrado " + row)
+            res.sendFile( __dirname + '/public/login_fail.html')
+          }
       });
 });
 
