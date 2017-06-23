@@ -1,7 +1,7 @@
 # uya_proyecto_final
 
 Links:
-https://alu0100851236.github.io/uya_proyecto_final/
+[Despliegue en HEROKU](https://collaborateclassroom.herokuapp.com/)
 
 Herramientas Utilizadas:
 
@@ -13,6 +13,6 @@ Usuarios y contraseñas:
 
  - Usuario: alu0100851236
  - Contraseña: pruebadavid
- 
+
  - Usuario: alu0100844665
  - Contraseña: pruebacarlos
