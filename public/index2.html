@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+
+        <!-- Title -->
+        <title>Collaborate Classroom</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta charset="utf-8">
+        <meta name="description" content="Pagina de inicio de la aplicación Collaborate Classroom " />
+        <meta name="keywords" content="ULL,classroom" />
+        <meta name="author" content="Carlos Fernandez Donate / David Dorta Acosta" />
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="57x57" href="assets/images/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="assets/images/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="assets/images/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="assets/images/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="assets/images/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="assets/images/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="assets/images/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+        <link rel="manifest" href="assets/images/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="assets/images/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <!-- Styles -->
+        <link type="text/css" rel="stylesheet" href="assets/plugins/materialize/css/materialize.min.css"/>
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="assets/css/materialize.css" media="screen,projection" rel="stylesheet" type="text/css">
+        <link href="assets/plugins/metrojs/MetroJs.min.css" rel="stylesheet">
+        <link href="assets/plugins/weather-icons-master/css/weather-icons.min.css" rel="stylesheet">
+
+
+        <!-- Theme Styles -->
+        <link href="assets/css/alpha.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/custom.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+
+    </head>
+    <body>
+        <div class="loader">
+            <div class="preloader-wrapper big active">
+                <div class="spinner-layer spinner-blue">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div><div class="gap-patch">
+                    <div class="circle"></div>
+                    </div><div class="circle-clipper right">
+                    <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="spinner-layer spinner-teal lighten-1">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div><div class="gap-patch">
+                    <div class="circle"></div>
+                    </div><div class="circle-clipper right">
+                    <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="spinner-layer spinner-yellow">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div><div class="gap-patch">
+                    <div class="circle"></div>
+                    </div><div class="circle-clipper right">
+                    <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="spinner-layer spinner-green">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div><div class="gap-patch">
+                    <div class="circle"></div>
+                    </div><div class="circle-clipper right">
+                    <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mn-content fixed-sidebar">
+            <header class="mn-header navbar-fixed">
+                <nav class="teal lighten-1">
+                    <div class="nav-wrapper row">
+                        <section class="material-design-hamburger navigation-toggle">
+                            <a href="javascript:void(0)" data-activates="slide-out" class="button-collapse show-on-large material-design-hamburger__icon">
+                                <span class="material-design-hamburger__layer" aria-label="menu" ></span>
+                            </a>
+                        </section>
+                        <div class="header-title col s3 m3">
+                            <a href="index1.html"><h5>Collaborate Classroom</h5></a>
+                        </div>
+                        <form class="left search col s6 hide-on-small-and-down" method="post" role="search">
+                            <div class="input-field">
+                                <input id="search" type="search" autocomplete="off" alt="buscar">
+                                <label for="search"><i class="fa fa-search" aria-hidden="true"></i>Buscar</label>
+                        </div>
+                        <a href="javascript: void(0)" class="close-search"><i class="material-icons">close</i></a>
+                    </form>
+
+                    <button class="btn-floating waves-effect waves-light" type="button" onclick="CambioTamanio()" VALUE="100%">100%</button>
+                    <button class="btn-floating waves-effect waves-light" type="button" onclick="CambioTamanio()" VALUE="150%">150%</button>
+                    <button class="btn-floating waves-effect waves-light" type="button" onclick="CambioTamanio()" VALUE="200%">200%</button>
+
+                    <ul class="right col s9 m3 nav-right-menu">
+                      <li class="hide-on-small-and-down" ><a href="javascript:void(0)" data-activates="dropdown1" class="dropdown-button dropdown-right show-on-large"><i class="fa fa-bell" aria-hidden="true" ></i><span class="badge" aria-label="notificaciones">4</span></a></li>
+                      <li class="hide-on-med-and-up"><a href="javascript:void(0)" class="search-toggle"><i class="material-icons">search</i></a></li>
+                    </ul>
+
+                        <ul id="dropdown1" class="dropdown-content notifications-dropdown">
+                            <li class="notificatoins-dropdown-container">
+                                <ul>
+                                    <li class="notification-drop-title">Today</li>
+                                    <li>
+                                        <a href="index1.html#!">
+                                        <div class="notification">
+                                            <div class="notification-icon circle cyan"><i class="material-icons">done</i></div>
+                                            <div class="notification-text"><p><b>Practica entregada</b></p><span>hace 7 min</span></div>
+                                        </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index1.html#!">
+                                        <div class="notification">
+                                            <div class="notification-icon circle deep-purple"><i class="material-icons">cached</i></div>
+                                            <div class="notification-text"><p><b>Actualizando Tutorias</b> </p><span>hace 14 min</span></div>
+                                        </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index1.html#!">
+                                        <div class="notification">
+                                            <div class="notification-icon circle red"><i class="material-icons">delete</i></div>
+                                            <div class="notification-text"><p><b>Borrada Tutoria</b> AEDA</p><span>hace 28 min</span></div>
+                                        </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index1.html#!">
+                                        <div class="notification">
+                                            <div class="notification-icon circle green"><i class="material-icons">file_upload</i></div>
+                                            <div class="notification-text"><p>Ficheros subidos correctamente</p><span>hace 4 h</span></div>
+                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="notification-drop-title">Yestarday</li>
+                                    <li>
+                                        <a href="index1.html#!">
+                                        <div class="notification">
+                                            <div class="notification-icon circle green"><i class="material-icons">security</i></div>
+                                            <div class="notification-text"><p>Actualización de seguridad</p><span>hace 16 h</span></div>
+                                        </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index1.html#!">
+                                        <div class="notification">
+                                            <div class="notification-icon circle cyan"><i class="material-icons">code</i></div>
+                                            <div class="notification-text"><p>Codigo compartido</p><span>hace 1 dia</span></div>
+                                        </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <div class="search-results">
+                <div class="container search-container">
+                    <div class="row">
+                        <div class="col s12 search-head">
+                            <div class="row">
+                                <div class="col s12">
+                                    <div class="left">
+                                        <p class="search-results-title">Quick search results</p>
+                                        <div class="search-filter left">
+                                          <fieldset>
+                                            <input type="checkbox" class="filled-in" id="filled-in-box">
+                                            <label for="filled-in-box">Google search</label>
+                                          </fieldset>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="res-not-found">No results found</div>
+                        </div>
+
+                        </div>
+                        <div class="col s12 m4 search-result-container">
+                        </div>
+                    </div>
+                </div>
+
+            <aside id="slide-out" class="side-nav white fixed">
+                <div class="side-nav-wrapper">
+                  <!-- logo de COLLABORATE CLASSROOM -->
+                  <img class="responsive-img" src="assets/images/CC_logo_01.png" alt="collaborate classroom" href="index1.html">
+
+                  <!--  Codigo necesario para los desplegables -->
+                  <!-- <div class="sidebar-account-settings">
+                    <ul>
+                      <li class="no-padding">
+                        <a class="waves-effect waves-grey"><i class="material-icons">mail_outline</i>Inbox</a>
+                      </li>
+                      <li class="no-padding">
+                        <a class="waves-effect waves-grey"><i class="material-icons">star_border</i>Starred<span class="new badge">18</span></a>
+                      </li>
+                      <li class="no-padding">
+                        <a class="waves-effect waves-grey"><i class="material-icons">done</i>Sent Mail</a>
+                      </li>
+                      <li class="no-padding">
+                        <a class="waves-effect waves-grey"><i class="material-icons">history</i>History<span class="new grey lighten-1 badge">3 new</span></a>
+                      </li>
+                      <li class="divider"></li>
+                      <li class="no-padding">
+                        <a class="waves-effect waves-grey"><i class="material-icons">exit_to_app</i>Sign Out</a>
+                      </li>
+                    </ul>
+                  </div> -->
+
+                  <!-- Menu lateral izquierdo -->
+                  <ul class="sidebar-menu collapsible collapsible-accordion" data-collapsible="accordion">
+                    <li class="no-padding active" ><a class="waves-effect waves-grey active" href="index1.html" aria-label="Inicio" role="link" ><i class="material-icons" >web</i>INICIO</a></li>
+                    <li class="no-padding">
+
+                    <li class="no-padding active" ><a class="waves-effect waves-grey active" href="https://campusvirtual.ull.es" aria-label="Campus Virtual" role="link"><i class="material-icons" >perm_identity</i>CAMPUS VIRTUAL</a></li>
+                    <li class="no-padding">
+
+                    <li class="no-padding">
+                      <a role="menubar" aria-label="Servicios" aria-haspopup="true" aria-expanded="false" href="#" tabindex="0" class="collapsible-header waves-effect waves-grey"><i class="material-icons">view_list</i>SERVICIOS<i class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
+                      <div class="collapsible-body">
+                        <ul role="menu">
+                          <li role="none"><a role="link" href="https://portal.ull.es/" tabindex="0">Portal</a></li>
+                          <li role="none"><a role="link" href="http://mail.ull.edu.es/" tabindex="0">Correo</a></li>
+                          <li role="none"><a role="link" href="http://ftpddv.stic.ull.es/" tabindex="0">Disco duro virtual</a></li>
+                        </ul>
+                      </div>
+                    </li>
+
+                    <li class="no-padding">
+                      <a role="menubar" aria-label="Asignaturas" aria-haspopup="true" aria-expanded="false" href="#" tabindex="0" class="collapsible-header waves-effect waves-grey"><i class="material-icons">done_all</i>ASIGNATURAS<i class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
+                      <div class="collapsible-body">
+                        <ul role="menu">
+                          <li role="none"><a role="link" href="uya.html" tabindex="0">Usabilidad Y Accesibilidad</a></li>
+                          <li role="none"><a role="link" href="redes_de_computadores.html" tabindex="0">Redes De Computadores</a></li>
+                          <li role="none"><a role="link" href="base_de_datos.html" tabindex="0">Bases De Datos</a></li>
+                        </ul>
+                      </div>
+                    </li>
+
+                  <!--                  <li class="no-padding">
+                      <a role="menubar" aria-label="Cursos" aria-haspopup="true" aria-expanded="false" href="#" tabindex="0" class="collapsible-header waves-effect waves-grey"><i class="material-icons">dns</i>CURSOS<i class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
+                      <div class="collapsible-body">
+                        <ul role="menu">
+                          <li role="none"><a role="link" href="#" tabindex="0">PRIMERO</a></li>
+                          <li role="none"><a role="link" href="#" tabindex="0">SEGUNDO</a></li>
+                          <li role="none"><a role="link" href="#" tabindex="0">TERCERO</a></li>
+                          <li role="none"><a role="link" href="#" tabindex="0">CUARTO</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                  -->
+                  </ul>
+
+                <div class="footer">
+                    <p class="copyright"> © 2017 <br>Carlos Fernandez<br> David Dorta</p>
+                    <span lang="en"><a href="index1.html#!">Privacy</a> &amp; <a href="index1.html#!">Terms</a></span>
+                </div>
+                </div>
+            </aside>
+            <main class="mn-inner inner-active-sidebar">
+                <!--Contenedor del cuerpo de la pagina-->
+                <div class="middle-content">
+
+                  <!-- breadcrumb -->
+                  <div class="nav-wrapper">
+                    <div class="col s12">
+                      <a href="index1.html" title="Collaborate Classroom" class="breadcrumb" aria-label="Inicio"><i class="material-icons">store</i></a>
+                    </div>
+                  </div>
+                  <!-- Fin de breadcrumb -->
+<br>
+                  <!-- Separador -->
+
+                  <hr style="border-color:grey;">
+
+                  <!-- FIn Separador -->
+
+                  <div class="row">
+
+                    <!-- Columna Inicio -->
+                    <div class="col s6" tabindex="0" aria-label="Portal">
+                      <div class="card">
+                        <br>
+                        <a href="index1.html" aria-label="Portal" role="link">
+                          <p class="center"><i class="material-icons md-48">web</i></p>
+                          <h5><p class="center">Portal</p></h5>
+                        </a>
+                        <br>
+                      </div>
+                    </div>
+
+                    <!-- Columna Campus Virtual -->
+                    <div class="col s6" tabindex="0" aria-label="Campus Virtual">
+                      <div class="card">
+                        <br>
+                        <a href="https://campusvirtual.ull.es" role="link">
+                          <p class="center"><i class="material-icons md-48">perm_identity</i></p>
+                          <h5><p class="center">Campus Virtual</p></h5>
+                        </a>
+                        <br>
+                      </div>
+                    </div>
+
+                    <!-- Columna Servicios -->
+                    <div class="col s6" tabindex="0" aria-label="Servicios">
+                      <div class="card">
+                        <br>
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <p class="activator center"><i class="material-icons md-48">view_list</i></p>
+                          <h5><p class="activator center">Servicios</p></h5>
+                        </div>
+                        <br>
+                        <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4"><i class="material-icons md-48">view_list</i>Servicios<i class="material-icons right">close</i></span>
+                          <ul role="menu">
+                            <li role="none"><a role="link" href="https://portal.ull.es/" tabindex="0">Portal</a></li>
+                            <li role="none"><a role="link" href="http://mail.ull.edu.es/" tabindex="0">Correo</a></li>
+                            <li role="none"><a role="link" href="http://ftpddv.stic.ull.es/" tabindex="0">Disco duro virtual</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                  <!-- Columna Asignaturas -->
+                  <div class="col s6" tabindex="0" aria-label="Asignaturas">
+                    <div class="card">
+                      <br>
+                      <div class="card-image waves-effect waves-block waves-light">
+                        <p class="activator center"><i class="material-icons md-48">done_all</i></p>
+                        <h5><p class="activator center">Asignaturas</p></h5>
+                      </div>
+                      <br>
+                      <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4"><i class="material-icons md-48">done_all</i>Asignaturas<i class="material-icons right">close</i></span>
+                        <ul role="menu">
+                          <li role="none"><a role="link" href="uya.html" tabindex="0">Usabilidad Y Accesibilidad</a></li>
+                          <li role="none"><a role="link" href="redes_de_computadores.html" tabindex="0">Redes De Computadores</a></li>
+                          <li role="none"><a role="link" href="base_de_datos.html" tabindex="0">Bases De Datos</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                    <!-- Separador -->
+                    <hr style="border-color:grey;">
+                    <!-- FIn Separador -->
+
+                    <!-- breadcrumb -->
+                    <div class="nav-wrapper">
+                      <div class="col s12">
+                        <a href="mapa_web.html" title="Collaborate Classroom" class="breadcrumb" aria-label="Mapa WEB"><i class="material-icons">visibility</i>Mapa Web</a>
+                      </div>
+                    </div>
+                    <!-- Fin de breadcrumb -->
+
+
+                <!--Contenedor lateral derecho-->
+
+                <!--
+                <div class="inner-sidebar">
+                    <span class="inner-sidebar-title">Notificar problemas <i class="material-icons">report_problem</i></span>
+                </div>
+            </main>
+          -->
+            <!--Contenedor del footer-->
+
+        </div>
+        <div class="left-sidebar-hover"></div>
+
+
+        <!-- Javascripts -->
+        <script src="assets/plugins/jquery/jquery-2.2.0.min.js"></script>
+        <script src="assets/plugins/materialize/js/materialize.min.js"></script>
+        <script src="assets/plugins/material-preloader/js/materialPreloader.min.js"></script>
+        <script src="assets/js/aumento_letra.js"></script>
+        <script src="assets/plugins/jquery-blockui/jquery.blockui.js"></script>
+        <script src="assets/plugins/waypoints/jquery.waypoints.min.js"></script>
+        <script src="assets/plugins/counter-up-master/jquery.counterup.min.js"></script>
+        <script src="assets/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
+        <script src="assets/plugins/chart.js/chart.min.js"></script>
+        <script src="assets/plugins/flot/jquery.flot.min.js"></script>
+        <script src="assets/plugins/flot/jquery.flot.time.min.js"></script>
+        <script src="assets/plugins/flot/jquery.flot.symbol.min.js"></script>
+        <script src="assets/plugins/flot/jquery.flot.resize.min.js"></script>
+        <script src="assets/plugins/flot/jquery.flot.tooltip.min.js"></script>
+        <script src="assets/plugins/curvedlines/curvedLines.js"></script>
+        <script src="assets/plugins/peity/jquery.peity.min.js"></script>
+        <script src="assets/js/alpha.min.js"></script>
+        <script src="assets/js/pages/dashboard.js"></script>
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-98812363-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    </body>
+</html>
