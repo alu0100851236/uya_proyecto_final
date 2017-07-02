@@ -288,8 +288,16 @@
                         <h5>Archivos</h5>
                         <div class="card">
                           <div class="card-content blue white-text">
-                            <p>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p>
+                            <div class="card-content blue">
+                            <form id="formulario_new_picture">
+                              <div class="form-group">
+                                <label for="articulo" class="active">Titulo</label><input id="titulo" type="text" placeholder="Nombre de la foto" class="form-control"></div>
+                                <div class="form-group"><label for="imagen">Elegir Imagen</label><input id="imagen" type="file"><p class="help-block">Elija una imagen que desea subir</p></div>
+                                <button id="botonGuardar" type="button" disabled="disabled" class="btn btn-primary">Guardar</button>
+                            </form>
+                          </div>
+                        </div>
+                          <div id="listado" class="container-fluid">
                           </div>
                         </div>
                       </div>
@@ -349,6 +357,10 @@
 -->
 
         <!-- Javascripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+        <script src="assets/js/subir_uya.js"></script>
+        <script src="assets/js/mostrar.js"></script>
         <script src="assets/plugins/jquery/jquery-2.2.0.min.js"></script>
         <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
         <script src="assets/js/chat_uya.js"></script>
