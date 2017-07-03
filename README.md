@@ -17,3 +17,9 @@ Usuarios y contraseñas:
 
  - Usuario: alu0100844665
  - Contraseña: pruebacarlos
+
+ # COMPONENTES DEL GRUPO
+
+ * [Carlos Fernández Donate](https://charly-poket.github.io)
+
+ * [David Dorta Acosta](https://alu0100851236.github.io/)
