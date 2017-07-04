@@ -96,7 +96,7 @@ $(document).ready(function()
           imagen: imagen
         },function()
         {
-            alert('Su foto se a subido correctamente');
+            setTimeout(function(){ Materialize.toast('archivo subido !', 4000) }, 0);
         });
     });
 });
