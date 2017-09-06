@@ -18,6 +18,19 @@ Usuarios y contraseñas:
  - Usuario: alu0100844665
  - Contraseña: pruebacarlos
 
+ - Usuario: dnueweh
+ - Contraseña: dnueweh
+ 
+ - Usuario: amarchi
+ - Contraseña: dnueweh
+ 
+ - Usuario: dperdom
+ - Contraseña: dnueweh
+ 
+ - Usuario: kivakur
+ - Contraseña: dnueweh
+ 
+ 
  # COMPONENTES DEL GRUPO
 
  * [Carlos Fernández Donate](https://charly-poket.github.io)
