@@ -18,6 +18,6 @@ myDataRef.on('child_added', function(snapshot) {
 
 function displayChatMessage(name, text) {
   console.log("name: " + text)
-    $('<div/>').text(text).prepend($('<em/>').text(name+': ')).appendTo($('#mensaje'));
+    $('<div tabindex="0"/>').text(text).prepend($('<em/>').text(name+': ')).appendTo($('#mensaje'));
     $('#mensaje')[0].scrollTop = $('#mensaje')[0].scrollHeight;
 };
