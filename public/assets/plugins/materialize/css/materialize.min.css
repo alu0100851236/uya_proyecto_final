@@ -3575,7 +3575,7 @@ footer.page-footer .footer-copyright {
     z-index: 2
 }
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
-    color: #ffab40;
+    color: #FFFFFF;
     margin-right: 20px;
     transition: color .3s ease;
     text-transform: uppercase
